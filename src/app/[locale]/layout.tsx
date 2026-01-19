@@ -6,7 +6,7 @@ import { Inter, Inter_Tight } from "next/font/google";
 import { Metadata } from "next";
 import { Header } from "../../components/layout/Header";
 import "./globals.css";
-import Footer from "../../components/layout/Footer";
+import Footer from "../../components/layout/Footer/Footer";
 
 const inter = Inter({
   variable: "--font-inter",
