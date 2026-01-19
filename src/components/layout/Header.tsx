@@ -21,32 +21,41 @@ export function Header() {
         {/* Desktop Navigation */}
         <div className="hidden h-full w-full items-center justify-between lg:flex">
           <section className="flex items-center gap-x-4">
-              <Link href="/" aria-label="Tractian Logo">
-                <Image
-                  src={tractianLogo}
-                  alt="Tractian"
-                  height={24}
-                  width={128}
-                  priority
-                />
-              </Link>
+            <Link href="/" aria-label="Tractian Logo">
+              <Image
+                src={tractianLogo}
+                alt="Tractian"
+                height={24}
+                width={128}
+                priority
+              />
+            </Link>
 
             <div className="flex h-[72px] items-center">
               <nav className="flex items-center">
                 <Dropdown title={i18n("solutions")}>
                   <ul className="space-y-1">
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-text-primary hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-text-primary hover:bg-gray-50 rounded-lg"
+                      >
                         Monitoreo Online
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-text-primary hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-text-primary hover:bg-gray-50 rounded-lg"
+                      >
                         Gestión de Activos
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-text-primary hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-text-primary hover:bg-gray-50 rounded-lg"
+                      >
                         Gestión de Energía
                       </Link>
                     </li>
@@ -56,17 +65,26 @@ export function Header() {
                 <Dropdown title={i18n("industries")}>
                   <ul className="space-y-1">
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Gerente de planta
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Ingeniero de confiabilidad
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Ingeniero de mantenimiento
                       </Link>
                     </li>
@@ -76,17 +94,26 @@ export function Header() {
                 <Dropdown title={i18n("resources")}>
                   <ul className="space-y-1">
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Casos de Estudio
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Blog
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Videos
                       </Link>
                     </li>
@@ -96,17 +123,26 @@ export function Header() {
                 <Dropdown title={i18n("about")}>
                   <ul className="space-y-1">
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Sobre Nosotros
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Carreras
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Contacto
                       </Link>
                     </li>
@@ -116,17 +152,26 @@ export function Header() {
                 <Dropdown title={i18n("pricing")}>
                   <ul className="space-y-1">
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Sobre Nosotros
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Carreras
                       </Link>
                     </li>
                     <li>
-                      <Link href="#" className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg">
+                      <Link
+                        href="#"
+                        className="block px-3 py-2 text-sm text-foreground hover:bg-gray-50 rounded-lg"
+                      >
                         Contacto
                       </Link>
                     </li>
@@ -148,17 +193,26 @@ export function Header() {
             >
               <ul>
                 <li>
-                  <Link href="/pt/who-we-serve/plant-manager" className={`block w-full text-left text-text-primary px-3 py-2 text-sm ${locale === "pt" ? "bg-gray-200" : "hover:bg-gray-100"}`}>
+                  <Link
+                    href="/pt/who-we-serve/plant-manager"
+                    className={`block w-full text-left text-text-primary px-3 py-2 text-sm ${locale === "pt" ? "bg-gray-200" : "hover:bg-gray-100"}`}
+                  >
                     {i18n("pt")}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/en/who-we-serve/plant-manager" className={`block w-full text-left text-text-primary px-3 py-2 text-sm ${locale === "en" ? "bg-gray-200" : "hover:bg-gray-100"}`}>
+                  <Link
+                    href="/en/who-we-serve/plant-manager"
+                    className={`block w-full text-left text-text-primary px-3 py-2 text-sm ${locale === "en" ? "bg-gray-200" : "hover:bg-gray-100"}`}
+                  >
                     {i18n("en")}
                   </Link>
                 </li>
                 <li>
-                  <Link href="/es/who-we-serve/gerente-de-planta" className={`block w-full text-left text-text-primary px-3 py-2 text-sm ${locale === "es" ? "bg-gray-200" : "hover:bg-gray-100"}`}>
+                  <Link
+                    href="/es/who-we-serve/gerente-de-planta"
+                    className={`block w-full text-left text-text-primary px-3 py-2 text-sm ${locale === "es" ? "bg-gray-200" : "hover:bg-gray-100"}`}
+                  >
                     {i18n("es")}
                   </Link>
                 </li>
@@ -229,7 +283,9 @@ export function Header() {
                   aria-label="Open Solutions"
                   className="flex w-full items-center justify-between px-4 py-3 hover:brightness-125"
                 >
-                  <p className="text-slate-500 text-base">{i18n("solutions")}</p>
+                  <p className="text-slate-500 text-base">
+                    {i18n("solutions")}
+                  </p>
                   <Chevron className="h-4 w-4 text-slate-500 transition-all" />
                 </button>
               </div>
@@ -239,7 +295,9 @@ export function Header() {
                   aria-label="Open Industries"
                   className="flex w-full items-center justify-between px-4 py-3 hover:brightness-125"
                 >
-                  <p className="text-slate-500 text-base">{i18n("industries")}</p>
+                  <p className="text-slate-500 text-base">
+                    {i18n("industries")}
+                  </p>
                   <Chevron className="h-4 w-4 text-slate-500 transition-all" />
                 </button>
               </div>
@@ -249,7 +307,9 @@ export function Header() {
                   aria-label="Open Resources"
                   className="flex w-full items-center justify-between px-4 py-3 hover:brightness-125"
                 >
-                  <p className="text-slate-500 text-base">{i18n("resources")}</p>
+                  <p className="text-slate-500 text-base">
+                    {i18n("resources")}
+                  </p>
                   <Chevron className="h-4 w-4 text-slate-500 transition-all" />
                 </button>
               </div>
