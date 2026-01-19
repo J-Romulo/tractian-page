@@ -43,9 +43,9 @@ export default async function LocaleLayout({
     <html lang={locale}>
       <body className={`${inter.variable} ${interTight.variable} antialiased`}>
         <NextIntlClientProvider messages={messages}>
-        <Header />
+          <Header />
           {children}
-        <Footer />
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
