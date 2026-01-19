@@ -3,7 +3,14 @@ import Logo from "../../icons/Logo";
 import { useLocale, useTranslations } from "next-intl";
 import BackToTopButton from "../../ui/BackToTopButton";
 import Link from "next/link";
-import { aboutSection, downloadSection, footerCertifications, FooterSection, footerSections, footerSocialMedias } from "./Footer.data";
+import {
+  aboutSection,
+  downloadSection,
+  footerCertifications,
+  FooterSection,
+  footerSections,
+  footerSocialMedias,
+} from "./Footer.data";
 import { Chevron } from "../../icons/Chevron";
 
 function FooterLinkItem({
@@ -55,7 +62,7 @@ function FooterSectionComponent({
         <h6 className="text-ellipsis whitespace-nowrap font-bold uppercase text-slate-50 text-body-sm">
           {title}
         </h6>
-        <Chevron className={"h-3 w-3 text-blue-50 transition-all"}/>
+        <Chevron className={"h-3 w-3 text-blue-50 transition-all"} />
       </button>
       <ul className="hidden gap-2 sm:grid sm:grid-cols-1">
         {filteredLinks.map((link) => (

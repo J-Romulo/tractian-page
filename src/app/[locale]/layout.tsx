@@ -42,11 +42,11 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={`${inter.variable} ${interTight.variable} antialiased`}>
-        <Header />
         <NextIntlClientProvider messages={messages}>
+        <Header />
           {children}
-        </NextIntlClientProvider>
         <Footer />
+        </NextIntlClientProvider>
       </body>
     </html>
   );
