@@ -31,7 +31,7 @@ export default function AccordionButton({
     >
       <div className=" flex w-full items-center justify-between gap-3 transition-all mb-2">
         <h3
-          className={`text-left text-body-md font-medium transition-all group-hover:text-blue-600 ${isOpen ? "text-blue-600" : "text-text-dark"}`}
+          className={`text-left text-[14px] lg:text-[16px] text-body-md font-medium transition-all group-hover:text-blue-600 ${isOpen ? "text-blue-600" : "text-text-dark"}`}
         >
           {title}
         </h3>

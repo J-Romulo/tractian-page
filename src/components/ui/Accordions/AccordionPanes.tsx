@@ -27,7 +27,7 @@ export default function AccordionPanes({
 
   return (
     <div className="flex w-full flex-col items-start gap-8 lg:min-h-[360px] lg:flex-row lg:justify-between">
-      <div className="flex justify-evenly w-full flex-col border-l-2 border-slate-300 xs:h-auto lg:gap-[22px]">
+      <div className="flex justify-evenly w-full flex-col border-l-2 border-slate-300 xs:h-auto gap-[15px] lg:gap-[22px]">
         {items.map((item) => {
           const isActive = activeItem === item.id;
           return (
@@ -46,7 +46,7 @@ export default function AccordionPanes({
               >
                 <CheckIcon active={isActive} />
                 <h3
-                  className={`w-full text-[20px] font-mono flex-1 text-left font-medium transition-all duration-500 text-body-lg lg:font-semibold lg:text-title-xs ${
+                  className={`w-full text-[16px] lg:text-[20px] font-mono flex-1 text-left font-medium transition-all duration-500 text-body-lg lg:font-semibold lg:text-title-xs ${
                     isActive
                       ? "text-slate-700 group-hover:brightness-110"
                       : "text-slate-400"
@@ -59,7 +59,7 @@ export default function AccordionPanes({
                 className="overflow-hidden transition-all duration-500 ease-in-out"
                 style={{ maxHeight: isActive ? "144px" : "0px" }}
               >
-                <div className="flex flex-col gap-1 text-left text-slate-500 text-body-md">
+                <div className="flex flex-col gap-1 text-[14px] lg:text-[16px] text-left text-slate-500 text-body-md">
                   <p>{item.description}</p>
                 </div>
               </div>
