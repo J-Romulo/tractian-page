@@ -9,6 +9,7 @@ import tractianLogo from "../../assets/tractian_logo.png";
 import { Chevron } from "../icons/Chevron";
 import Button from "../ui/Button";
 import { useLocale, useTranslations } from "next-intl";
+import DemoModal from "./DemoModal";
 
 export function Header() {
   const i18n = useTranslations("header");
@@ -227,9 +228,9 @@ export function Header() {
               {i18n("login")}
             </Link>
 
-            <Button variant="secondary" href="#">
-              {i18n("demo")}
-            </Button>
+            <DemoModal
+              trigger={<Button variant="secondary">{i18n("demo")}</Button>}
+            />
           </section>
         </div>
 
@@ -363,12 +364,16 @@ export function Header() {
                     {i18n("login")}
                   </Link>
                 </div>
-                <button
-                  className="w-full rounded-sm transition ease-in-out duration-150 text-center bg-blue-600 text-white font-medium text-base px-4 py-2 hover:bg-blue-900 active:bg-blue-950"
-                  type="button"
-                >
-                  {i18n("demo")}
-                </button>
+                <DemoModal
+                  trigger={
+                    <button
+                      className="w-full rounded-sm transition ease-in-out duration-150 text-center bg-blue-600 text-white font-medium text-base px-4 py-2 hover:bg-blue-900 active:bg-blue-950"
+                      type="button"
+                    >
+                      {i18n("demo")}
+                    </button>
+                  }
+                />
               </div>
             </div>
           </div>
