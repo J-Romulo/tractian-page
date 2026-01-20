@@ -1,4 +1,4 @@
-import { TabProps } from "../../../components/ui/Tabs/Tab";
+import { TabProps } from "../../../../components/ui/Tabs/Tab";
 
 export const tabsContent: TabProps[] = [
   {

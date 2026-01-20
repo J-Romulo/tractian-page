@@ -1,5 +1,5 @@
 import { useLocale, useTranslations } from "next-intl";
-import { steps } from "../data/steps";
+import { steps } from "./data";
 
 export default function Steps() {
   const i18n = useTranslations();
@@ -18,7 +18,7 @@ export default function Steps() {
             {i18n("steps.header")}
           </p>
         )}
-        <h2 className="text-left text-[32px] font-mono font-bold text-text-dark text-title-md lg:mb-4 lg:text-center">
+        <h2 className="text-left text-[20px] lg:text-[32px] font-mono font-bold text-text-dark text-title-md lg:mb-4 lg:text-center">
           {i18n("steps.title")}
         </h2>
 
@@ -35,7 +35,7 @@ export default function Steps() {
                 <h3 className="font-bold text-[20px] font-mono text-text-dark text-title-xs leading-[1.38]">
                   {step.title}
                 </h3>
-                <p className="text-slate-500 text-body-md">
+                <p className="text-slate-500 text-[14px] lg:text-[16px] text-body-md">
                   {step.description}
                 </p>
               </article>

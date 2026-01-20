@@ -1,7 +1,8 @@
 import Image from "next/image";
-import Button from "../../../components/ui/Button";
+import Button from "../../../../components/ui/Button";
 import { ArrowRight } from "lucide-react";
 import { useLocale, useTranslations } from "next-intl";
+import DemoModal from "../../../../components/layout/DemoModal";
 
 export default function BannerHeader() {
   const i18n = useTranslations("banner-header");
@@ -29,7 +30,7 @@ export default function BannerHeader() {
             <p className="text-center font-light text-white text-body-md md:text-center">
               {i18n("header")}
             </p>
-            <h1 className="text-center font-mono text-[40px] leading-[1.3] font-bold text-white md:text-left">
+            <h1 className="text-center font-mono text-[25px] lg:text-[40px] leading-[1.3] font-bold text-white md:text-left">
               {i18n("title")} <br className="hidden xl:block" />
               {i18n("title-2")} <br className="hidden xl:block" />
               {i18n("title-3")}
@@ -41,10 +42,14 @@ export default function BannerHeader() {
             </p>
           </article>
 
-          <Button className="relative z-30 mx-auto gap-2 md:mx-0">
-            {i18n("button")}
-            <ArrowRight size={16} />
-          </Button>
+          <DemoModal
+            trigger={
+              <Button className="relative z-30 mx-auto gap-2 md:mx-0">
+                {i18n("button")}
+                <ArrowRight size={16} />
+              </Button>
+            }
+          />
         </div>
       </div>
 
@@ -83,7 +88,7 @@ export default function BannerHeader() {
           loading="lazy"
           width={2560}
           height={1980}
-          className="flex h-full w-full object-cover object-center sm:hidden"
+          className="flex h-full w-full object-cover object-right sm:hidden"
           src={backgroundImageUrl}
         />
       </figure>

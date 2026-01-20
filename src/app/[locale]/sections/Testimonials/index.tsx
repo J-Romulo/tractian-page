@@ -1,6 +1,6 @@
 import Image from "next/image";
-import { Testimonial, testimonials } from "../data/testimonals";
-import Quote from "../../../components/icons/Quote";
+import { Testimonial, testimonials } from "./data";
+import Quote from "../../../../components/icons/Quote";
 import { useTranslations } from "next-intl";
 
 function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
@@ -46,7 +46,7 @@ export default function Testimonials() {
   return (
     <section className="w-full bg-white py-12 sm:px-4 lg:py-16 xl:px-0">
       <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-8 md:gap-12 lg:max-w-6xl">
-        <h2 className="px-4 text-[32px] font-mono text-text-dark text-left font-bold text-title-md sm:px-0 lg:text-center">
+        <h2 className="px-4 text-[20px] lg:text-[32px] font-mono text-text-dark text-left font-bold text-title-md sm:px-0 lg:text-center">
           {i18n("testimonials.title")}
         </h2>
 

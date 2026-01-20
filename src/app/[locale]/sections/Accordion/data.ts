@@ -1,4 +1,4 @@
-import { AccordionItem } from "../../../components/ui/Accordions/AccordionPanes";
+import { AccordionItem } from "../../../../components/ui/Accordions/AccordionPanes";
 
 export const accordionItems: AccordionItem[] = [
   {

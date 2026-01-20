@@ -1,6 +1,6 @@
 import { useTranslations } from "next-intl";
-import AccordionButton from "../../../components/ui/Accordions/Accordion";
-import { faqs } from "../data/faqs";
+import AccordionButton from "../../../../components/ui/Accordions/Accordion";
+import { faqs } from "./data";
 
 export default function Faq() {
   const i18n = useTranslations();
@@ -18,7 +18,7 @@ export default function Faq() {
         <p className="text-center text-body-md uppercase text-blue-600">
           {i18n("faq.header")}
         </p>
-        <h2 className="font-mono text-center text-[40px] font-semibold text-text-dark lg:text-title-lg lg:font-bold">
+        <h2 className="font-mono text-center text-[20px] lg:text-[40px] font-semibold text-text-dark lg:text-title-lg lg:font-bold">
           {i18n("faq.title")}
         </h2>
       </article>

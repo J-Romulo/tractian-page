@@ -1,7 +1,7 @@
 import { useTranslations } from "next-intl";
-import TabsHandler from "../../../components/ui/Tabs/TabsHandler";
-import { tabsContent } from "../data/tabsContent";
-import { TabProps } from "../../../components/ui/Tabs/Tab";
+import TabsHandler from "../../../../components/ui/Tabs/TabsHandler";
+import { tabsContent } from "./data";
+import { TabProps } from "../../../../components/ui/Tabs/Tab";
 
 //TODO: Refactor to use a utility function for translation mapping
 export default function Tabs() {
@@ -45,7 +45,7 @@ export default function Tabs() {
     <section className="relative w-full bg-white px-4 py-12 lg:px-16 lg:py-20">
       <div className="mx-auto flex max-w-xl flex-col items-center gap-8 text-slate-700 lg:max-w-6xl lg:gap-12">
         <article className="flex w-full flex-col items-start gap-4 lg:items-center">
-          <h2 className="mt-4 w-full font-mono text-text-dark text-[32px] text-left font-bold text-title-md lg:text-center">
+          <h2 className="mt-4 w-full font-mono text-text-dark text-[20px] lg:text-[32px] text-left font-bold text-title-md lg:text-center">
             {i18n("tabs.title")}
           </h2>
         </article>
