@@ -233,6 +233,45 @@
       "response": "For our Bundled plan, combining Condition Monitoring Sensors and Maintenance Management Software, pricing depends on the size and complexity of your operation. We'll work with you to build a custom quote based on your needs, with no hidden fees. Everything you need is included in one simple, integrated package."
     }
   },
+  "demo-modal": {
+    "title": "Request Your Demo",
+    "description": "Fill in the fields to talk to a specialist and understand the benefits that our solutions offer for your maintenance operations.",
+    "name": "Name",
+    "email": "Work Email",
+    "jobTitle": {
+      "placeholder": "Job Title",
+      "analyst-automation": "Automation Analyst",
+      "analyst-inovation": "Innovation Analyst",
+      "apprentice": "Intern",
+      "assistant": "Assistant"
+    },
+    "industrySector": {
+      "placeholder": "Industry Sector",
+      "automotive": "Automotive",
+      "chemical": "Chemical",
+      "energy": "Energy",
+      "food-beverage": "Food & Beverage",
+      "manufacturing": "Manufacturing",
+      "mining": "Mining",
+      "oil-gas": "Oil & Gas",
+      "pharmaceutical": "Pharmaceutical",
+      "pulp-paper": "Pulp & Paper",
+      "other": "Other"
+    },
+    "solution": {
+      "placeholder": "Select the solution of most interest",
+      "vibration": "Condition Monitoring",
+      "manager": "CMMS Software",
+      "energy": "OEE Solutions"
+    },
+    "submit": "Request demo",
+    "submitting": "Requesting..."
+  },
+  "form": {
+    "required": "This field is required!",
+    "phone": "Invalid phone number, please check if it is complete!",
+    "submitted": "Form submitted!"
+  },
   "footer": {
     "backToTop": "Back to top",
     "copyright": "© TRACTIAN TECHNOLOGIES INC",

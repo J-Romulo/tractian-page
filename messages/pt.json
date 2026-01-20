@@ -237,6 +237,45 @@
       "response": "Não. A Tractian é usada por todos os níveis envolvidos na operação: supervisores, engenheiros, gerentes de manutenção, técnicos e analistas de confiabilidade. Se você precisa manter a planta funcionando, a Tractian é para você."
     }
   },
+  "demo-modal": {
+    "title": "Solicite sua demonstração",
+    "description": "Preencha os campos para falar com um especialista e entender os benefícios que a Tractian oferece para suas operações de manutenção.",
+    "name": "Nome Completo",
+    "email": "E-mail profissional",
+    "jobTitle": {
+      "placeholder": "Cargo",
+      "analyst-automation": "Analista de Automação",
+      "analyst-inovation": "Analista de Inovacão",
+      "apprentice": "Estagiário",
+      "assistant": "Assistente"
+    },
+    "industrySector": {
+      "placeholder": "Setor da Indústria",
+      "automotive": "Automotivo",
+      "chemical": "Química",
+      "energy": "Energia",
+      "food-beverage": "Alimentos e Bebidas",
+      "manufacturing": "Manufatura",
+      "mining": "Mineração",
+      "oil-gas": "Petróleo e Gás",
+      "pharmaceutical": "Farmacêutica",
+      "pulp-paper": "Celulose e Papel",
+      "other": "Outro"
+    },
+    "solution": {
+      "placeholder": "Selecione a solução de maior interesse",
+      "vibration": "Monitoramento de condição",
+      "manager": "Gestão de Ativos",
+      "energy": "Gestão de Energia"
+    },
+    "submit": "Solicitar Demonstração",
+    "submitting": "Enviando..."
+  },
+  "form": {
+    "required": "Campo obrigatório!",
+    "phone": "Número inválido, verifique se está completo!",
+    "submitted": "Formulário enviado!"
+  },
   "footer": {
     "backToTop": "Voltar ao topo",
     "copyright": "© Tractian Tecnologia Ltda",

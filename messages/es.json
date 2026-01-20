@@ -237,6 +237,48 @@
       "response": "No. Tractian está diseñado para cualquier persona responsable de que la planta siga operando. Esto incluye técnicos de mantenimiento, ingenieros de planta, ingenieros de confiabilidad, supervisores de mantenimiento y gerentes de mantenimiento, entre otros."
     }
   },
+  "demo-modal": {
+    "title": "Solicita tu Demostración",
+    "description": "Completa los campos para hablar con un especialista y entender los beneficios que Tractian ofrece para tus operaciones de mantenimiento.",
+    "name": "Nombre completo",
+    "email": "E-mail profesional",
+    "jobTitle": {
+      "placeholder": "Cargo",
+      "analyst-automation": "Analista de Automatización",
+      "analyst-inovation": "Analista de Inovación",
+      "apprentice": "Aprendiz",
+      "assistant": "Assistente"
+    },
+    "industrySector": {
+      "placeholder": "Sector",
+      "automotive": "Automotriz",
+      "chemical": "Química",
+      "energy": "Energía",
+      "food-beverage": "Alimentos y Bebidas",
+      "manufacturing": "Manufactura",
+      "mining": "Minería",
+      "oil-gas": "Petróleo y Gas",
+      "pharmaceutical": "Farmacéutica",
+      "pulp-paper": "Celulosa y Papel",
+      "other": "Otro"
+    },
+    "solution": {
+      "placeholder": "Seleccione la solución de mayor interés",
+      "vibration": "Sensor de Vibración",
+      "manager": "Software de Gestión",
+      "energy": "Sensor de Energía"
+    },
+    "monitoring": "Sensor de Vibración",
+    "assets": "Software de Gestión",
+    "energy": "Sensor de Energía",
+    "submit": "Solicitar Demonstración",
+    "submitting": "Solicitando..."
+  },
+  "form": {
+    "required": "¡Campo obligatorio!",
+    "phone": "¡Escriba el número de tu teléfono móvil correctamente!",
+    "submitted": "¡Formulário enviado!"
+  },
   "footer": {
     "backToTop": "Volver al inicio",
     "copyright": "Tractian Tecnología Industrial S. de R.L. de C.V.",
