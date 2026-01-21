@@ -1,36 +1,60 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Tractian Homepage
 
-## Getting Started
+This project is a **technical challenge** for reproducing the Tractian landing page. The goal was to replicate the page's layout, styles, responsiveness, behaviors, with versions in **English (EN), Portuguese (PT), and Spanish (ES)**.
 
-First, run the development server:
+- **Original Page:** [Tractian Plant Manager](https://tractian.com/who-we-serve/plant-manager)
+- **Reproduction (Live Demo):** [Live Demo URL](https://tractian-page-iota.vercel.app/solucoes-para-gerentes-industriais)
+
+---
+
+## Stack
+
+- **Next.js 16** (App Router)
+- **TypeScript**
+- **Tailwind**
+- **Next-Intl** for translations (EN, PT, ES)
+- **TanStack Form + Zod** for form validation
+
+---
+
+## ⚡ Challenges Tackled
+
+- Reproducing responsive layout.
+- Implementing **multi-language support** with i18n.
+- Ensuring **accessibility**: focus trap, ARIA roles, screen reader compatibility.
+- Keeping code **clean, organized, and maintainable**.
+
+---
+
+## 💡 Room for Improvement
+
+- Header menus are not 100% like the original. Also Header component code could be better organised.
+- Some **icons** are placeholders.
+- Animations and transitions are not exactly like the original page.
+- Footer links are not ordered by language like the original page.
+- More advanced **accessibility enhancements** could be added (some improvements do not exist in the original page either).
+- Implement E2E tests
+
+---
+
+## How to run the project
+
+Use node 22+:
+
+```bash
+nvm use 22
+```
+
+Install dependencies:
+
+```bash
+npm install
+```
+
+Run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
