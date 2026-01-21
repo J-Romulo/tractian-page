@@ -2,8 +2,8 @@
 
 This project is a **technical challenge** for reproducing the Tractian landing page. The goal was to replicate the page's layout, styles, responsiveness, behaviors, with versions in **English (EN), Portuguese (PT), and Spanish (ES)**.
 
-- **Original Page:** [Tractian Plant Manager](https://tractian.com/who-we-serve/plant-manager)
-- **Reproduction (Live Demo):** [Live Demo URL](https://tractian-page-iota.vercel.app/solucoes-para-gerentes-industriais)
+- **Original Page:** [Tractian](https://tractian.com/who-we-serve/plant-manager)
+- **Reproduction:** [URL](https://tractian-page-iota.vercel.app/solucoes-para-gerentes-industriais)
 
 
 ## Stack
