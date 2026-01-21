@@ -4,12 +4,12 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { Globe, Menu, X } from "lucide-react";
-import Dropdown from "../ui/Dropdown";
-import tractianLogo from "../../assets/tractian_logo.png";
-import { Chevron } from "../icons/Chevron";
-import Button from "../ui/Button";
+import Dropdown from "../../ui/Dropdown";
+import tractianLogo from "../../../assets/tractian_logo.png";
+import { Chevron } from "../../icons/Chevron";
+import Button from "../../ui/Button";
 import { useLocale, useTranslations } from "next-intl";
-import DemoModal from "./DemoModal";
+import DemoModal from "../DemoModal";
 
 export function Header() {
   const i18n = useTranslations("header");
