@@ -1,5 +1,5 @@
 import { NextIntlClientProvider } from "next-intl";
-import { getMessages } from "next-intl/server";
+import { getMessages, getTranslations } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "../../i18n/routing";
 import { Inter, Inter_Tight } from "next/font/google";
@@ -18,11 +18,19 @@ const interTight = Inter_Tight({
   subsets: ["latin"],
 });
 
-export const metadata: Metadata = {
-  title: "Tractian para Gerentes Industriais",
-  description:
-    "Otimize a performance dos seus ativos com as melhores ferramentas de Asset Performance Management (APM) para garantir máxima disponibilidade e reduzir paradas inesperadas com inteligência artificial.",
+type Props = {
+  params: Promise<{ locale: string }>;
 };
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { locale } = await params;
+  const i18n = await getTranslations({ locale, namespace: "metadata" });
+
+  return {
+    title: i18n("title"),
+    description: i18n("description"),
+  };
+}
 
 export default async function LocaleLayout({
   children,
