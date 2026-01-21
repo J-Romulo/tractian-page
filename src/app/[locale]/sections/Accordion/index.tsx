@@ -6,9 +6,9 @@ import { translateItems } from "../../../../utils/translation";
 export default function Accordion() {
   const i18n = useTranslations("accordion");
   const formattedItems = translateItems(accordionItems, i18n, {
-      keys: ['title', 'description'],
-      filterEmpty: true
-  })
+    keys: ["title", "description"],
+    filterEmpty: true,
+  });
 
   return (
     <section className="w-full bg-background-secondary px-4 py-12 lg:py-16">

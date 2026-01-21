@@ -9,7 +9,7 @@ type TranslateOptions<T> = {
 export function translateItems<T>(
   items: T[],
   i18n: TranslateFn,
-  options: TranslateOptions<T>
+  options: TranslateOptions<T>,
 ): T[] {
   const { keys, arrayKeys = [], filterEmpty = true } = options;
 
@@ -18,7 +18,7 @@ export function translateItems<T>(
 
     for (const key of keys) {
       const value = item[key];
-      if (typeof value === 'string') {
+      if (typeof value === "string") {
         const translated = i18n(value);
         if (filterEmpty) {
           if (isNonEmptyString(translated)) {
@@ -36,7 +36,7 @@ export function translateItems<T>(
       const value = item[key];
       if (Array.isArray(value)) {
         const translated = value
-          .map((v) => (typeof v === 'string' ? i18n(v) : v))
+          .map((v) => (typeof v === "string" ? i18n(v) : v))
           .filter((v) => !filterEmpty || isNonEmptyString(v));
 
         if (translated.length > 0) {
@@ -52,5 +52,5 @@ export function translateItems<T>(
 }
 
 function isNonEmptyString(value?: string) {
-    return typeof value === "string" && value.trim().length > 0
+  return typeof value === "string" && value.trim().length > 0;
 }

@@ -8,10 +8,10 @@ export default function Tabs() {
   const i18n = useTranslations();
 
   const formattedItems = translateItems(tabsContent, i18n, {
-    keys: ['label', 'title', 'description'],
-    arrayKeys: ['bullets'],
-    filterEmpty: true
-  })
+    keys: ["label", "title", "description"],
+    arrayKeys: ["bullets"],
+    filterEmpty: true,
+  });
 
   return (
     <section className="relative w-full bg-white px-4 py-12 lg:px-16 lg:py-20">

@@ -5,10 +5,14 @@ import { translateItems } from "../../../../utils/translation";
 
 export default function Faq() {
   const i18n = useTranslations();
-  const formattedItems = translateItems(faqs.filter((item) => i18n.has(item.title)), i18n, {
-        keys: ['title', 'response'],
-        filterEmpty: true
-    })
+  const formattedItems = translateItems(
+    faqs.filter((item) => i18n.has(item.title)),
+    i18n,
+    {
+      keys: ["title", "response"],
+      filterEmpty: true,
+    },
+  );
 
   return (
     <section className="mx-auto flex max-w-2xl flex-col items-center gap-8 px-4 lg:max-w-6xl lg:gap-16 py-12">

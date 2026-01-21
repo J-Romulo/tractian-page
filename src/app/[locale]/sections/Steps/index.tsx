@@ -6,9 +6,9 @@ export default function Steps() {
   const i18n = useTranslations();
   const locale = useLocale();
   const formattedItems = translateItems(steps, i18n, {
-        keys: ['title', 'description'],
-        filterEmpty: true
-    })
+    keys: ["title", "description"],
+    filterEmpty: true,
+  });
 
   return (
     <section className="bg-background-secondary px-4 py-12 lg:py-16">

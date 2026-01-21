@@ -37,10 +37,10 @@ function TestimonialCard({ testimonial }: { testimonial: Testimonial }) {
 export default function Testimonials() {
   const i18n = useTranslations();
   const formattedItems = translateItems(testimonials, i18n, {
-        keys: ['quote', 'name', 'role', "company", "image"],
-        filterEmpty: true
-    })
-  
+    keys: ["quote", "name", "role", "company", "image"],
+    filterEmpty: true,
+  });
+
   return (
     <section className="w-full bg-white py-12 sm:px-4 lg:py-16 xl:px-0">
       <div className="mx-auto flex w-full max-w-2xl flex-col items-center gap-8 md:gap-12 lg:max-w-6xl">
