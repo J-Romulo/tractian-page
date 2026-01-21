@@ -5,7 +5,6 @@ This project is a **technical challenge** for reproducing the Tractian landing p
 - **Original Page:** [Tractian Plant Manager](https://tractian.com/who-we-serve/plant-manager)
 - **Reproduction (Live Demo):** [Live Demo URL](https://tractian-page-iota.vercel.app/solucoes-para-gerentes-industriais)
 
----
 
 ## Stack
 
@@ -15,18 +14,18 @@ This project is a **technical challenge** for reproducing the Tractian landing p
 - **Next-Intl** for translations (EN, PT, ES)
 - **TanStack Form + Zod** for form validation
 
----
 
-## ⚡ Challenges Tackled
+
+## Challenges Tackled
 
 - Reproducing responsive layout.
 - Implementing **multi-language support** with i18n.
 - Ensuring **accessibility**: focus trap, ARIA roles, screen reader compatibility.
 - Keeping code **clean, organized, and maintainable**.
 
----
 
-## 💡 Room for Improvement
+
+## Room for Improvement
 
 - Header menus are not 100% like the original. Also Header component code could be better organised.
 - Some **icons** are placeholders.
@@ -35,7 +34,6 @@ This project is a **technical challenge** for reproducing the Tractian landing p
 - More advanced **accessibility enhancements** could be added (some improvements do not exist in the original page either).
 - Implement E2E tests
 
----
 
 ## How to run the project
 
