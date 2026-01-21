@@ -1,14 +1,14 @@
 import { useTranslations } from "next-intl";
 import AccordionPanes from "../../../../components/ui/Accordions/AccordionPanes";
 import { accordionItems } from "./data";
+import { translateItems } from "../../../../utils/translation";
 
 export default function Accordion() {
   const i18n = useTranslations("accordion");
-  const formattedItems = accordionItems.map((item) => ({
-    ...item,
-    title: i18n(item.title),
-    description: i18n(item.description),
-  }));
+  const formattedItems = translateItems(accordionItems, i18n, {
+      keys: ['title', 'description'],
+      filterEmpty: true
+  })
 
   return (
     <section className="w-full bg-background-secondary px-4 py-12 lg:py-16">

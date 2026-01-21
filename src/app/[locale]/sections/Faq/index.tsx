@@ -1,16 +1,14 @@
 import { useTranslations } from "next-intl";
 import AccordionButton from "../../../../components/ui/Accordions/Accordion";
 import { faqs } from "./data";
+import { translateItems } from "../../../../utils/translation";
 
 export default function Faq() {
   const i18n = useTranslations();
-  const formattedItems = faqs
-    .filter((item) => i18n.has(item.title))
-    .map((item) => ({
-      ...item,
-      title: i18n(item.title),
-      response: i18n(item.response),
-    }));
+  const formattedItems = translateItems(faqs.filter((item) => i18n.has(item.title)), i18n, {
+        keys: ['title', 'response'],
+        filterEmpty: true
+    })
 
   return (
     <section className="mx-auto flex max-w-2xl flex-col items-center gap-8 px-4 lg:max-w-6xl lg:gap-16 py-12">

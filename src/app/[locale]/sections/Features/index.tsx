@@ -1,13 +1,13 @@
 import { useTranslations } from "next-intl";
 import { features } from "./data";
+import { translateItems } from "../../../../utils/translation";
 
 export default function Features() {
   const i18n = useTranslations();
-  const formattedItems = features.map((item) => ({
-    ...item,
-    title: i18n(item.title),
-    description: i18n(item.description),
-  }));
+  const formattedItems = translateItems(features, i18n, {
+        keys: ['title', 'description'],
+        filterEmpty: true
+    })
 
   return (
     <section className="w-full bg-background-secondary px-4 py-12 lg:py-16">

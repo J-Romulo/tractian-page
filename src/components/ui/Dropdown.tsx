@@ -65,7 +65,7 @@ export default function Dropdown({
           <>
             {!isSmall && (
               <div
-                className="fixed inset-0 top-[72px] bg-black/30 z-40"
+                className="fixed inset-0 top-[72px] bg-black/50 backdrop-blur-[1px]  z-40"
                 onClick={() => setIsOpen(false)}
               />
             )}

@@ -1,14 +1,14 @@
 import { useLocale, useTranslations } from "next-intl";
 import { steps } from "./data";
+import { translateItems } from "../../../../utils/translation";
 
 export default function Steps() {
   const i18n = useTranslations();
   const locale = useLocale();
-  const formattedItems = steps.map((item) => ({
-    ...item,
-    title: i18n(item.title),
-    description: i18n(item.description),
-  }));
+  const formattedItems = translateItems(steps, i18n, {
+        keys: ['title', 'description'],
+        filterEmpty: true
+    })
 
   return (
     <section className="bg-background-secondary px-4 py-12 lg:py-16">

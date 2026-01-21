@@ -2,44 +2,16 @@ import { useTranslations } from "next-intl";
 import TabsHandler from "../../../../components/ui/Tabs/TabsHandler";
 import { tabsContent } from "./data";
 import { TabProps } from "../../../../components/ui/Tabs/Tab";
+import { translateItems } from "../../../../utils/translation";
 
-//TODO: Refactor to use a utility function for translation mapping
 export default function Tabs() {
   const i18n = useTranslations();
-  const isNonEmptyString = (value?: string) =>
-    typeof value === "string" && value.trim().length > 0;
 
-  const formattedItems = tabsContent.map((item) => {
-    const { label, title, description, bullets, ...rest } = item;
-
-    const translatedLabel = i18n(label!);
-    const translatedTitle = i18n(title!);
-    const translatedDescription = i18n(description!);
-    const translatedBullets = bullets
-      ?.map((bullet) => i18n(bullet))
-      .filter(isNonEmptyString);
-
-    return {
-      ...rest,
-
-      ...(isNonEmptyString(translatedLabel) && {
-        label: translatedLabel,
-      }),
-
-      ...(isNonEmptyString(translatedTitle) && {
-        title: translatedTitle,
-      }),
-
-      ...(isNonEmptyString(translatedDescription) && {
-        description: translatedDescription,
-      }),
-
-      ...(translatedBullets &&
-        translatedBullets.length > 0 && {
-          bullets: translatedBullets,
-        }),
-    };
-  });
+  const formattedItems = translateItems(tabsContent, i18n, {
+    keys: ['label', 'title', 'description'],
+    arrayKeys: ['bullets'],
+    filterEmpty: true
+  })
 
   return (
     <section className="relative w-full bg-white px-4 py-12 lg:px-16 lg:py-20">
