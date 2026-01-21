@@ -1,4 +1,4 @@
-# Tractian Homepage
+# Tractian page
 
 This project is a **technical challenge** for reproducing the Tractian landing page. The goal was to replicate the page's layout, styles, responsiveness, behaviors, with versions in **English (EN), Portuguese (PT), and Spanish (ES)**.
 
