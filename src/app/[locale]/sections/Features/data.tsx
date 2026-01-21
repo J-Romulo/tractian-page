@@ -1,4 +1,3 @@
-// TODO: create components for icons
 export const features = [
   {
     title: "features.allPlant.title",
