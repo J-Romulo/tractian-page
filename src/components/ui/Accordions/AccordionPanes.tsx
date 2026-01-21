@@ -37,8 +37,8 @@ export default function AccordionPanes({
               className={`group w-full bg-transparent px-4 transition-all duration-300 -ml-[2px] border-l-2 ${
                 isActive ? "border-blue-500" : "border-slate-300"
               }`}
-                aria-labelledby={`accordion-title-${item.id}`}
-                aria-describedby={`accordion-desc-${item.id}`}
+              aria-labelledby={`accordion-title-${item.id}`}
+              aria-describedby={`accordion-desc-${item.id}`}
             >
               <div
                 className={`flex w-full items-center gap-3 transition-all duration-500 lg:justify-between ${
@@ -60,7 +60,7 @@ export default function AccordionPanes({
               <div
                 className="overflow-hidden transition-all duration-500 ease-in-out"
                 style={{ maxHeight: isActive ? "144px" : "0px" }}
-                  id={`accordion-desc-${item.id}`}
+                id={`accordion-desc-${item.id}`}
               >
                 <div className="flex flex-col gap-1 text-[14px] lg:text-[16px] text-left text-slate-500 text-body-md">
                   <p>{item.description}</p>

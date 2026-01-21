@@ -191,7 +191,7 @@ export function Header() {
                   <Chevron className="w-3 h-3 text-slate-500 group-hover:text-blue-600 transition-colors" />
                 </span>
               }
-              ariaLabel={i18n('language')}
+              ariaLabel={i18n("language")}
             >
               <ul>
                 <li>

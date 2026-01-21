@@ -16,7 +16,7 @@ export default function Dropdown({
   trigger,
   children,
   variant = "default",
-  ariaLabel
+  ariaLabel,
 }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);

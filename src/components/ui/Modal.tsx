@@ -47,6 +47,6 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
         <div className="w-full">{children}</div>
       </div>
     </div>,
-    document.body
+    document.body,
   );
 }
