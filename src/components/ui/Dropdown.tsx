@@ -8,6 +8,7 @@ interface DropdownProps {
   trigger?: React.ReactNode;
   children: React.ReactNode;
   variant?: "default" | "small";
+  ariaLabel?: string;
 }
 
 export default function Dropdown({
@@ -15,6 +16,7 @@ export default function Dropdown({
   trigger,
   children,
   variant = "default",
+  ariaLabel
 }: DropdownProps) {
   const [isOpen, setIsOpen] = useState(false);
   const dropdownRef = useRef<HTMLDivElement>(null);
@@ -48,6 +50,7 @@ export default function Dropdown({
           className={`font-sans flex items-center h-full gap-2 ${isSmall ? "px-2 text-sm" : "pl-8 text-base"} select-none font-medium transition-colors ${
             isOpen ? "text-primary" : "text-text-primary hover:text-primary"
           }`}
+          aria-label={ariaLabel}
         >
           {trigger || (
             <>

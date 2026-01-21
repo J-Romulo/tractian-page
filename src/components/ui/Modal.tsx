@@ -1,5 +1,5 @@
 import { X } from "lucide-react";
-import { ReactNode } from "react";
+import { ReactNode, useEffect, useRef } from "react";
 import { createPortal } from "react-dom";
 
 interface ModalProps {
@@ -9,10 +9,25 @@ interface ModalProps {
 }
 
 export default function Modal({ isOpen, onClose, children }: ModalProps) {
+  const modalRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    if (isOpen) {
+      modalRef.current?.focus();
+    }
+  }, [isOpen]);
+
   if (!isOpen) return null;
 
   return createPortal(
-    <div className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto p-4">
+    <div
+      className="fixed inset-0 z-[9999] flex items-center justify-center overflow-y-auto p-4"
+      role="dialog"
+      aria-modal="true"
+      aria-labelledby="demo-modal-title"
+      ref={modalRef}
+      tabIndex={-1}
+    >
       <div
         className="fixed inset-0 bg-slate-900/70"
         onClick={onClose}
@@ -28,9 +43,10 @@ export default function Modal({ isOpen, onClose, children }: ModalProps) {
         >
           <X className="size-5" />
         </button>
+
         <div className="w-full">{children}</div>
       </div>
     </div>,
-    document.body,
+    document.body
   );
 }

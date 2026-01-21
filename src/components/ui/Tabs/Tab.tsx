@@ -22,7 +22,6 @@ export function TabLabel({ id, label, isActive, setActiveTab }: TabLabelProps) {
       <button
         data-tab-id={id}
         onClick={() => setActiveTab(id)}
-        aria-label="Select Tab"
         className={`relative flex-1 text-[14px] lg:text-[16px] rounded-sm px-6 py-1.5 transition-all duration-100 text-body-md sm:w-auto sm:items-start sm:p-4 sm:duration-300 sm:text-tag md:text-body-sm lg:rounded-none lg:px-2 lg:text-body-md xl:px-4 2xl:px-6 ${
           isActive
             ? "bg-white font-semibold text-slate-700 shadow-sm sm:bg-transparent sm:font-bold sm:shadow-none"
