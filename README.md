@@ -28,7 +28,7 @@ This project is a **technical challenge** for reproducing the Tractian landing p
 ## Room for Improvement
 
 - Header menus are not 100% like the original. Also Header component code could be better organised.
-- Some **icons** are placeholders.
+- Some **icons** are placeholders or different than the originals.
 - Animations and transitions are not exactly like the original page.
 - Footer links are not ordered by language like the original page.
 - More advanced **accessibility enhancements** could be added (some improvements do not exist in the original page either).
